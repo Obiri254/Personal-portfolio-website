@@ -1,0 +1,486 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+#home {
+  background: url("/static/images/tonny.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 670px;
+  align-items: center;
+
+}
+
+.name h1 {
+  color: #fff;
+  margin-left: 30px;
+  font-weight: bolder;
+  font-size: 90px;
+
+
+}
+
+.career {
+  color: #fff;
+  margin-left: 40px;
+  font-size: 30px;
+}
+.name, h1 {
+  color: #fff;
+  font-size: xx-large;
+
+}
+
+span {
+  color: #FF731D;
+}
+
+#home a {
+  background-color: #FF731D;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 40px;
+  margin-top: 40px;
+  display: inline-block;
+
+
+}
+
+.home-content {
+  margin-top: 150px;
+  display: block;
+ 
+}
+
+.max-width {
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+.under-title {
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .name h1 {
+      color: #fff;
+      margin-left: 2px;
+      font-weight: bolder;
+      font-size: 62px;
+  }
+  .career {
+    color: #fff;
+    margin-left: 10px;
+    font-size: 20px;
+    }
+}
+
+/***** end of home styling*****/
+
+
+#about {
+  display: flex;
+  height: 650px;
+  flex-direction: row;
+
+}
+
+.about-content {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+img {
+  width: 50%;
+  height: auto;
+  
+}
+
+.title {
+  text-align: center;
+  margin-top: 40px;
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    }
+    #about {
+    display: flex;
+    height: 900px;
+    flex-direction: row;
+  }
+}
+
+
+#about a {
+  text-decoration: none;
+  background-color: #FF731D;
+  padding: 8px;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: inline-block;
+  color: #fff;
+  font-weight: bold;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#about .text {
+  font-weight: bold;
+}
+/* start of services style */
+
+#services {
+  display: flex;
+  height: 650px;
+  flex-direction: row;
+  background-color: #100F0F;
+  color: #fff;
+
+}
+
+.services-content {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  background-color: #181818;
+  border: none;
+  margin: 10px;
+  text-align: center;
+}
+
+#services .card :hover {
+  background-color: #FF731D;
+  color: white;
+  transform: translateY(-10px);
+  transition: all ease-in-out 0.5s;
+}
+
+#services .text {
+  font-weight: bolder;
+  font-size: 25px;
+
+}
+
+
+.text p {
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .services-content {
+    margin-top: 100px;
+    width: 100%;
+    display: inline-block;
+    justify-content: space-between;
+  }
+  #services {
+    display: flex;
+    height: 900px;
+    flex-direction: row;
+    background-color: #100F0F;
+    color: #fff;
+  
+    }
+
+}
+
+
+
+
+
+
+
+#experience {
+  display: flex;
+}
+
+.skills-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.skills-content ol {
+  text-decoration: none;
+}
+
+
+
+#perc {
+  background-color: #000;
+  margin-top: 20px;
+}
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#perc .container .card {
+  position: relative;
+  width: 250px;
+  background: linear-gradient(0deg, #1b1b1b, #222, #1b1b1b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  border-radius: 4px;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+#perc .container .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, .5);
+}
+
+#perc .container .card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, .03);
+  pointer-events: none;
+  z-index: 1;
+}
+
+#perc .percent {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 50px #000;
+  background: #222;
+  z-index: 1000;
+}
+
+#perc .percent .num {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+#perc .percent .num h2 {
+  color: #777;
+  font-weight: 700;
+  font-size: 40px;
+  transition: 0.5s;
+}
+
+#perc .card:hover .percent .num h2 {
+  color: #fff;
+  font-size: 60px;
+}
+
+#perc .percent .num h2 span {
+  color: #777;
+  font-size: 24px;
+  transition: 0.5s;
+}
+
+#perc .card:hover .percent .num h2 span {
+  color: #fff;
+}
+
+#perc .text {
+  position: relative;
+  color: #777;
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+#perc .card:hover .text {
+  color: #fff;
+}
+
+#perc svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  z-index: 1000;
+}
+
+#perc svg circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #191919;
+  stroke-width: 10;
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+}
+
+#perc svg circle:nth-child(2) {
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+}
+
+#perc .card:nth-child(1) svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (400 * 90) / 100);
+  stroke: #FF731D;
+}
+
+
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+/*start of contact */
+
+#contact {
+  background-color: #fff;
+  color: #000;
+  padding: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-content {
+    display: inline-block;
+    justify-content: space-between;
+  }
+}
+#contact .text {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+#contact i {
+  font-weight: bolder;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+#contact .fields {
+  display: flex;
+  flex-direction: row;
+}
+
+#contact .info {
+  margin-top: -10px;
+  margin-left: -100px;
+  
+}
+
+#contact .row {
+  display: flex;
+  flex-flow: row;
+  margin-top: 30px;
+}
+
+#contact .head {
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+#contact .sub-title {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+#contact a {
+  text-decoration: none;
+}
+
+.send-msg {
+  background-color: #FF731D;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: bolder;
+
+}
+
+.field-textarea, .subject, .fullname, .email-input, .message {
+  border-radius: 15px;
+  width: 100%;
+  margin: 5px;
+}
+
+.subject, .email-input {
+  padding-top: 25px;
+}
+
+.email-input {
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-content {
+    width: 100%;
+    display: inline-block;
+    justify-content: space-between;
+  }
+  #contact .info {
+    margin-top: -10px;
+    margin-left: -220px;
+  
+  }
+  .send-msg {
+    background-color: #FF731D;
+    text-align: center;
+  
+  }
+}
+
+
+/*footer*/
+
+.footer {
+  text-align: center;
+  align-items: center;
+  background-color: #000;
+}
+
+.footer i {
+  color: #fff;
+}
+
+i {
+  color: #FF731D;
+}

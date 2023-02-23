@@ -1,0 +1,28 @@
+{% load static %}
+
+
+<div class="Navbar">
+    <a class="Navbar__Link Navbar__Link-brand" href="{% url 'home' %}">
+    Port<span>folio</span>
+    </a>
+    <div class="Navbar__Link Navbar__Link-toggle">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+  <nav class="Navbar__Items Navbar__Items--right">
+    <a class="Navbar__Link" href="{% url 'home' %}">
+    Home
+    </a>
+    <a class="Navbar__Link" href="{% url 'about' %}">
+    About
+    </a>
+    <a class="Navbar__Link" href="{% url 'services' %}">
+    Services
+    </a>
+    <a class="Navbar__Link" href="{% url 'skills' %}">
+    Skills
+    </a>
+    <a class="Navbar__Link" href="{% url 'contact' %}">
+    Contact
+    </a>
+  </nav>
+</div>

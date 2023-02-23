@@ -1,0 +1,250 @@
+{% extends 'portfolio/base.html' %}
+
+{% block content %}
+{% load static %}
+<section class="home" id="home">
+      <div class="max-width">
+          <div class="row">
+            <div class="home-content">
+                <div class="name"><h1>Obiri Anthony</h1></div>
+                <div class="career">A <span>software engineer</span> and <span>graphics designer</span></div>
+                <a href="{% url 'contact' %}"> Contact me</a>
+            </div>
+          </div>
+      </div>
+    </section>
+
+<!-- about section start -->
+<section class="about" id="about">
+  <div class="max-width">
+    <h2 class="title">About me</h2>
+    <h4 class="under-title">get to know me</h4>
+    <div class="about-content">
+      <div class="column-left">
+        <img src="{% static 'images/tonny.jpg' %}" alt="">
+      </div>
+      <div class="column-right">
+        <div class="text"><h4>I'm Anthony and I'm a <span>software engineer</span> and a <span>graphics designer</span></h4>
+        </div>
+        <p>I have clear, indepth understanding of web development and graphics design. My reliability and ability to deliver high quality products would make me an effective tool in any organization. I work well with others and I can as well perform on myself. Python django is my preffered and professional framework but also I am a big fun of functional programming especially elixir and the phoenix framework. This doesn't mean i am limited to those two because I can be very flexible when need be</p>
+        <a href="https://docs.google.com/document/d/1Gi2AApCCNOlm4ycgtPNXf9uGYwG7E1cbJCnxrZkyajc/view?usp=sharing" target="blank" style="color: black">Download CV</a>         
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- services section start -->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">My services</h2>
+            <h4 class="under-title"><span>__what i offer__</span></h4>
+            <div class="services-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fa fa-code fa-4x" aria-hidden="true"></i>
+                        <div class="text">Web Development</div>
+                        <p>Development of websites according to users requirements. Debugging and testing. Product delivery</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fa fa-line-chart fa-4x" aria-hidden="true"></i>
+                        <div class="text">Machine Learning</div>
+                        <p>Developing machine learning models and systems using Neural Networks. Testing and deploying models. Implementing appropriate Machine Learning algorithms. Adjusting hyperparameters and Cross-validation </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fa fa-paint-brush fa-4x" aria-hidden="true"></i>
+                        <div class="text">Graphics Design</div>
+                        <p>Designing of high quality logos, posters, business cards, flyers and websites. Symmetrical designs</p>
+                    </div>
+                </div>
+               </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+<!-- skills section start -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">Experience</h2>
+            <h4 class="under-title"><span>__what i got__</span></h4>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">WHAT I HAVE DONE?.</div>
+                    <ol>
+                    <li>Created personal portfolio website</li>
+                        <li>Built high quality logos for various clients</li>
+                   </ol>
+            </div>
+            <div class="column right">
+                    <div class="text">WHAT I HAVE DONE?.</div>
+                    <ol>
+                      <li>  Built chatbots for apps and blog sites.</li>
+                       <li> Worked as a communications lead for the IoT network hub Kenya</li>
+                   </ol>
+            </div>
+        </div>
+
+
+</section>
+
+<section class="perc" id="perc">
+<div class="container">
+  <div class="card">
+    <div class="box">
+      <div class="percent">
+        <svg>
+          <circle cx="70" cy="70" r="70"></circle>
+          <circle cx="70" cy="70" r="70"></circle>
+          <svg>
+            <div class="num">
+              <h2>80<span>%</span></h2>
+            </div>
+      </div>
+          <h2 class="text">Front-end </h2>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="box">
+      <div class="percent">
+        <svg>
+          <circle cx="70" cy="70" r="70"></circle>
+          <circle cx="70" cy="70" r="70"></circle>
+          <svg>
+            <div class="num">
+              <h2>50<span>%</span></h2>
+            </div>
+      </div>
+          <h2 class="text">Back-end </h2>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="box">
+      <div class="percent">
+        <svg>
+          <circle cx="70" cy="70" r="70"></circle>
+          <circle cx="70" cy="70" r="70"></circle>
+          <svg>
+            <div class="num">
+              <h2>80<span>%</span></h2>
+            </div>
+      </div>
+          <h2 class="text">Graphics Design </h2>
+    </div>
+  </div>
+
+    <div class="card">
+    <div class="box">
+      <div class="percent">
+        <svg>
+          <circle cx="70" cy="70" r="70"></circle>
+          <circle cx="70" cy="70" r="70"></circle>
+          <svg>
+            <div class="num">
+              <h2>50<span>%</span></h2>
+            </div>
+      </div>
+          <h2 class="text">Machine Learning </h2>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<!-- contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Obiri Anthony Mburu</div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Kakamega</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fa fa-envelope-square" aria-hidden="true"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">anthonymburu4449@gmail.com</div>
+                            </div>
+                        </div>
+                         <div class="row">
+                       <i class="fa fa-github" aria-hidden="true"></i>
+
+                            <div class="info">
+                                <a href="https://github.com/Obiri254" target="blank" style="color: black">  <div class="head">Github</div> </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                       <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            <div class="info">
+                              <a href="https://www.linkedin.com/in/obiri-anthony-aa8507196/" target="blank" style="color: black">  <div class="head">Linkedin</div> </a>
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                       <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <div class="info">
+                                 <a href="https://twitter.com/mburu_007" target="blank" style="color: black">  <div class="head">Twitter</div> </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" class="fullname" placeholder="Name">
+                            </div>
+                            <div class="field email">
+                                <input type="text" class="email-input" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" class="subject" placeholder="Subject">
+                        </div>
+                        <div class="field-textarea">
+                            <textarea class="message" cols="30" rows="10" placeholder="Message.."></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button class="send-msg" type="submit" name="send">Send message</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- footer section start -->
+    <footer>
+        <div class="footer">
+            <i class="fa fa-copyright" aria-hidden="true">2022 all rights reserved</i>
+        </div>
+    </footer>
+
+{% endblock content %}

@@ -1,0 +1,24 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- about section start -->
+<section class="about" id="about">
+  <div class="max-width">
+    <h2 class="title">About me</h2>
+    <h4 class="under-title">get to know me</h4>
+    <div class="about-content">
+      <div class="column-left">
+        <img src="{% static 'images/tonny.jpg' %}" alt="">
+      </div>
+      <div class="column-right">
+        <div class="text"><h4>I'm Anthony and I'm a <span>software engineer</span> and a <span>graphics designer</span></h4>
+        </div>
+        <p>I have clear, indepth understanding of web development and graphics design. My reliability and ability to deliver high quality products would make me an effective tool in any organization. I work well with others and I can as well perform on myself. Python django is my preffered and professional framework but also I am a big fun of functional programming especially elixir and the phoenix framework. This doesn't mean i am limited to those two because I can be very flexible when need be</p>
+        <a href="https://docs.google.com/document/d/1Gi2AApCCNOlm4ycgtPNXf9uGYwG7E1cbJCnxrZkyajc/view?usp=sharing" target="blank" style="color: black">Download CV</a>         
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock content %}
